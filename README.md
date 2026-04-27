@@ -52,11 +52,10 @@ market_making_project/
 │
 ├── run_pipeline.ipynb            # End-to-end runner — single entry point
 │
-├── outputs/                       # Auto-created on first run
+├── outputs/                       
 │   ├── phase1_A_k.csv
 │   ├── phase3_gamma_star.csv
 │   ├── phase4_daily_pnl.csv
-│   └── phase4_eta_calibration.csv
 │
 └── README.md
 ```
