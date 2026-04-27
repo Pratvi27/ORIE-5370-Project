@@ -42,13 +42,13 @@ market_making_project/
 │   └── Cleaned Data.xlsx          # Input: 1-min OHLCV + CS spread, 19 assets
 │
 ├── src/
-│   ├── config.py                  # All hyperparameters — edit here only
-│   ├── data_loader.py             # Load, preprocess, align, split train/test
-│   ├── covariance.py              # Build Σ from train bars only
-│   ├── phase1_calibration.py      # OLS: fit A_i, k_i 
-│   ├── market_making.py           # Γ matrix, half-spreads, AS simulation
-│   ├── phase3_gamma_optimization.py  # Sharpe-maximising γ sweep
-│   └── phase4_liquidation.py      # AC QP solver + dual-trigger simulation
+│   ├── config.py                   # All hyperparameters
+│   ├── data_loader.py              # Load, preprocess, align, split train/test
+│   ├── risk_matrix.py              # Build Σ, Γ matrix from train bars only
+│   ├── calibration.py              # OLS: fit A_i, k_i 
+│   ├── simulation.py               # simulation driver code
+│   ├── as_bergault.py              # AS Multi-asset driver
+│   └── almgren_chriss.py           # AC QP solver 
 │
 ├── run_pipeline.ipynb            # End-to-end runner — single entry point
 │
@@ -56,6 +56,7 @@ market_making_project/
 │   ├── phase1_A_k.csv
 │   ├── phase3_gamma_star.csv
 │   ├── phase4_daily_pnl.csv
+|   ├── phase4_dashboard.png
 │
 └── README.md
 ```
