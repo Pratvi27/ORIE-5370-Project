@@ -32,3 +32,13 @@ TAU            = 1.0       # bar duration (minutes)
 
 # ── Hard-coded γ* (used when CSV not available) ───────────────────────────────
 GAMMA_STAR_DEFAULT = 0.825404185268019
+
+# ── Robustness analysis configs ───────────────────────────────────────────
+CONFIGS = [
+    ("NoAC",            dict(ac_mode="off",      liq_solver="ac")),
+    ("EOD_AC",          dict(ac_mode="eod_only", liq_solver="ac")),
+    ("Inv_AC",          dict(ac_mode="inv_only", liq_solver="ac")),
+    ("Dual_AC",         dict(ac_mode="dual",     liq_solver="ac")),
+    ("Dual_TWAP",       dict(ac_mode="dual",     liq_solver="twap")),
+    ("EOD_TWAP",        dict(ac_mode="eod_only", liq_solver="twap")),
+]
