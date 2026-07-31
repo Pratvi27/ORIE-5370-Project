@@ -2,7 +2,12 @@
 
 **ORIE 5370 — Optimization Modelling in Finance**
 
-A unified, state-driven market making engine that synthesizes continuous-time stochastic control (Avellaneda-Stoikov) with discrete-time convex optimization (Almgren-Chriss) across 19 correlated equity assets.
+**Authors**
+- Kanishk Agarwal
+- William Change
+- Pratvi Shah
+
+A unified, state-driven market making engine that synthesizes continuous-time stochastic control (Avellaneda–Stoikov) with discrete-time convex optimization (Almgren–Chriss) across 19 correlated equity assets.
 
 ---
 
